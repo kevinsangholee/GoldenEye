@@ -26,7 +26,7 @@ def root_loop():
 	if keyboard.is_pressed('q'):
 		print("clicking on " + str(x) + " "+ str(y))
 		pyautogui.click(x,y)
-	root.after(100, root_loop)
+	root.after(10, root_loop)
 
 class MainApplication(tk.Frame):
 	def __init__(self, parent, *args, **kwargs):
